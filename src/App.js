@@ -15,6 +15,8 @@ import {
   Link,
   Routes
 } from "react-router-dom";
+import{Read} from './components/read';
+import{Create} from './components/create';
 
 class App extends React.Component {
   render(){
@@ -33,8 +35,8 @@ class App extends React.Component {
       </Navbar>
       <Routes>
         <Route path='/' element={<Content></Content>} exact></Route>
-        <Route path='/read' element={<Header />}></Route>
-        <Route path='/create' element={<Footer />}></Route>
+        <Route path='/read' element={<Read />}></Route>
+        <Route path='/create' element={<Create />}></Route>
       </Routes>
 
       {/* <Header></Header>
